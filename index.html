@@ -51,133 +51,256 @@
 	            <li>Результаты поиска</li>
 	        </ul>
 	        <div class="page-main">
-	        	<aside>
-	        		<form action="#">
-	        			<fieldset>
-	        				<legend>Фильтр</legend>
-	        				<p>
-	        					<span>Локация:</span>
-	        					<input type="text" placeholder="Город:">
-	        					<select>
-								  <option hidden>Район:</option>
-								  <option>Киевский</option>
-								  <option>Немышлянский</option>
-								</select>
-	        				</p>
-	        				<p class="radio">
-	        					<span>Пол:</span>
-	        					 
-	        					<input type="radio" id="sex1" name="sex-group" checked>
-	    						<label for="sex1">Женский</label>
-	    						<input type="radio" id="sex2" name="sex-group">
-	    						<label for="sex2">Мужской</label>
-	    						<input type="radio" id="sex3" name="sex-group">
-	    						<label for="sex3">Унисекс</label>
-								<span>Возраст:</span>
-								<input type="radio" id="age1" name="age-group" checked>
-	    						<label for="age1">0</label>
-	    						<input type="radio" id="age2" name="age-group">
-	    						<label for="age2">1-2</label>
-	    						<input type="radio" id="age3" name="age-group">
-	    						<label for="age3">2-4</label>
-	    						<input type="radio" id="age4" name="age-group">
-	    						<label for="age4">5-7</label>
-	    						<input type="radio" id="age5" name="age-group">
-	    						<label for="age5">8-11</label>
-	    						<input type="radio" id="age6" name="age-group">
-	    						<label for="age6">11-14</label>
-	    						<span>Размер (одежда):</span>
-								<input type="radio" id="size1" name="size-group" checked>
-	    						<label for="size1">50 - 80 см</label>
-	    						<input type="radio" id="size2" name="size-group">
-	    						<label for="size2">80 -92 см</label>
-	    						<input type="radio" id="size3" name="size-group">
-	    						<label for="size3">92 - 104 см</label>
-	    						<input type="radio" id="size4" name="size-group">
-	    						<label for="size4"> 110 - 122 см</label>
-	    						<input type="radio" id="size5" name="size-group">
-	    						<label for="size5">128 - 146 см</label>
-	    						<input type="radio" id="size6" name="size-group">
-	    						<label for="size6">146 -164 см</label>
-	    						<span>Размер (обувь):</span>
-	    						<select class="shoes">
-								  <option hidden>Стелька (см) - Размер:</option>
-								  <option>9,5 см - 16</option>
-								  <option>10 см - 16,5</option>
-								  <option>10,5 см - 17</option>
-								  <option>11 см - 18</option>
-								  <option>11,5 см - 19</option>
-								  <option>9,5 см - 16</option>
-								  <option>10 см - 16,5</option>
-								  <option>10,5 см - 17</option>
-								  <option>11 см - 18</option>
-								  <option>11,5 см - 19</option>
-								</select>
-	    						<span>Сезон:</span>
-								<input type="radio" id="season1" name="season-group" checked>
-	    						<label for="season1">Демисезон</label>
-	    						<input type="radio" id="season2" name="season-group">
-	    						<label for="season2">Лето</label>
-	    						<input type="radio" id="season3" name="season-group">
-	    						<label for="season3">Зима</label>
-	    						
-	        				
-	        				</p>
-	        				<p class="colors">
-	        					<span>Цвет:</span>
+	        	<div class="aside">
+		        	<div class="aside-top">
+		        		<form action="#">
+		        			<fieldset>
+		        				<legend>Фильтр</legend>
+		        				<p>
+		        					<span>Локация:</span>
+		        					<input type="text" placeholder="Город:">
+		        					<select>
+									  <option hidden>Район:</option>
+									  <option>Киевский</option>
+									  <option>Немышлянский</option>
+									</select>
+		        				</p>
+		        				<p class="radio">
+		        					<span>Пол:</span>
+		        					 
+		        					<input type="radio" id="sex1" name="sex-group" checked>
+		    						<label for="sex1">Женский</label>
+		    						<input type="radio" id="sex2" name="sex-group">
+		    						<label for="sex2">Мужской</label>
+		    						<input type="radio" id="sex3" name="sex-group">
+		    						<label for="sex3">Унисекс</label>
+									<span>Возраст:</span>
+									<input type="radio" id="age1" name="age-group" checked>
+		    						<label for="age1">0</label>
+		    						<input type="radio" id="age2" name="age-group">
+		    						<label for="age2">1-2</label>
+		    						<input type="radio" id="age3" name="age-group">
+		    						<label for="age3">2-4</label>
+		    						<input type="radio" id="age4" name="age-group">
+		    						<label for="age4">5-7</label>
+		    						<input type="radio" id="age5" name="age-group">
+		    						<label for="age5">8-11</label>
+		    						<input type="radio" id="age6" name="age-group">
+		    						<label for="age6">11-14</label>
+		    						<span>Размер (одежда):</span>
+									<input type="radio" id="size1" name="size-group" checked>
+		    						<label for="size1">50 - 80 см</label>
+		    						<input type="radio" id="size2" name="size-group">
+		    						<label for="size2">80 -92 см</label>
+		    						<input type="radio" id="size3" name="size-group">
+		    						<label for="size3">92 - 104 см</label>
+		    						<input type="radio" id="size4" name="size-group">
+		    						<label for="size4"> 110 - 122 см</label>
+		    						<input type="radio" id="size5" name="size-group">
+		    						<label for="size5">128 - 146 см</label>
+		    						<input type="radio" id="size6" name="size-group">
+		    						<label for="size6">146 -164 см</label>
+		    						<span>Размер (обувь):</span>
+		    						<select class="shoes">
+									  <option hidden>Стелька (см) - Размер:</option>
+									  <option>9,5 см - 16</option>
+									  <option>10 см - 16,5</option>
+									  <option>10,5 см - 17</option>
+									  <option>11 см - 18</option>
+									  <option>11,5 см - 19</option>
+									  <option>9,5 см - 16</option>
+									  <option>10 см - 16,5</option>
+									  <option>10,5 см - 17</option>
+									  <option>11 см - 18</option>
+									  <option>11,5 см - 19</option>
+									</select>
+		    						<span>Сезон:</span>
+									<input type="radio" id="season1" name="season-group" checked>
+		    						<label for="season1">Демисезон</label>
+		    						<input type="radio" id="season2" name="season-group">
+		    						<label for="season2">Лето</label>
+		    						<input type="radio" id="season3" name="season-group">
+		    						<label for="season3">Зима</label>
+		    						
+		        				
+		        				</p>
+		        				<p class="colors">
+		        					<span>Цвет:</span>
 
-	        					
-								<!--	
-	        					<input type="checkbox" id="color1" />
-								<label for="color1"></label>
-								
-								
-								<input type="checkbox" id="color2" checked="checked" />
-								<label for="color2"></label>
+		        					
+									<!--	
+		        					<input type="checkbox" id="color1" />
+									<label for="color1"></label>
+									
+									
+									<input type="checkbox" id="color2" checked="checked" />
+									<label for="color2"></label>
 
-								<input type="checkbox" id="color3" />
-								<label for="color3"></label>
-								
-								
-								<input type="checkbox" id="color4" />
-								<label for="color4"></label>
+									<input type="checkbox" id="color3" />
+									<label for="color3"></label>
+									
+									
+									<input type="checkbox" id="color4" />
+									<label for="color4"></label>
 
-								<input type="checkbox" id="color5" />
-								<label for="color5"></label>
-								
-								
-								<input type="checkbox" id="color6"  />
-								<label for="color6"></label>
+									<input type="checkbox" id="color5" />
+									<label for="color5"></label>
+									
+									
+									<input type="checkbox" id="color6"  />
+									<label for="color6"></label>
 
-								<input type="checkbox" id="color7" />
-								<label for="color7"></label>
-								
-								
-								<input type="checkbox" id="color8"  />
-								<label for="color8"></label>
+									<input type="checkbox" id="color7" />
+									<label for="color7"></label>
+									
+									
+									<input type="checkbox" id="color8"  />
+									<label for="color8"></label>
 
-								<input type="checkbox" id="color9" />
-								<label for="color9"></label>
-								
-								
-								<input type="checkbox" id="color10" />
-								<label for="color10"></label>
+									<input type="checkbox" id="color9" />
+									<label for="color9"></label>
+									
+									
+									<input type="checkbox" id="color10" />
+									<label for="color10"></label>
 
-								<input type="checkbox" id="color11" />
-								<label for="color11"></label>
-								
-								
-								<input type="checkbox" id="color12" />
-								<label for="color12"></label>
-							-->
-								
-	    						
-	        				</p>
-	        			</fieldset>
-	        		</form>
+									<input type="checkbox" id="color11" />
+									<label for="color11"></label>
+									
+									
+									<input type="checkbox" id="color12" />
+									<label for="color12"></label>
+								-->
+									
+		    						
+		        				</p>
+		        			</fieldset>
+		        		</form>
 
-	        	</aside>
+		        	</div>
+		        	<div class="aside-bottom">
+		        		<form action="#">
+		        			<fieldset>
+		        				<legend>категории</legend>
+		        				<ul>
+		        					<li class="pointer">
+						                <a href="#">Одежда</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Обувь</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Игрушки</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Детская мебель</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Транспорт для детей</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Малыши до года</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Книги</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Карнавальные костюмы</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						            <li class="pointer">
+						                <a href="#">Другое</a>
+						                <ul>
+						                    <li><a href="#">Кросовки, Кеды</a></li>
+						                    <li><a href="#">Ботинки, Сапоги</a></li>
+						                    <li><a href="#">Босоножки, Тапочки</a></li>
+						                    <li><a href="#">Туфли, Мокасины</a></li>
+						                    <li><a href="#">Другое</a></li>
+						                </ul>
+						            </li>
+						        </ul>
+		        			</fieldset>
+		        		</form>
+					</div>
+		        </div>
 	        	<div>
+
+	        		<div class="sorted">
+
+	        			<form action="#">
+		        			<fieldset>
+		        				<a href="#" class="list-style active"><span>&#8942;&#8942;&#8942;</span></a>
+		        				<a href="#" class="list-style "><span>&#8942;&#8801;</span></a>
+		        				<span>Показать:</span>
+		        				<select>
+									<option>15</option>
+									<option>10</option>
+									<option>5</option>
+								</select>	
+		        				<span>Сортировать:</span>	
+								<select>
+									<option>Без сортировки</option>
+									<option>По возрастанию цены</option>
+									<option>По дате</option>
+								</select>
+							</fieldset>
+	        			</form>
+	        		</div>
 	        		<h1>результаты поиска</h1>
 		        	<div class="search-results">
 		        		
@@ -330,5 +453,6 @@
 			<span >&copy; Все права защищены </span><span>2019 / Обменяшка</span>
 		</div>
 	</footer>
+	<script src="https://use.fontawesome.com/5c816d7975.js"></script>
 </body>
 </html>

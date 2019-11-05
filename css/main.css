@@ -248,15 +248,98 @@ main {
     main .page .page-main {
       display: flex;
       font-family: 'Roboto', sans-serif; }
-      main .page .page-main aside {
+      main .page .page-main .sorted {
+        width: 831px;
+        height: 73px;
+        border: 2px solid #C4C4C4;
+        border-radius: 16px;
+        margin-bottom: 55px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #373737;
+        box-sizing: border-box;
+        padding: 15px 16px 0 17px; }
+        main .page .page-main .sorted select {
+          border: 1px solid #E1E3E6;
+          height: 36px;
+          background: #F2F4F7;
+          border-radius: 7px;
+          margin-left: 10px; }
+        main .page .page-main .sorted span {
+          margin-left: 30px; }
+        main .page .page-main .sorted .list-style {
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 1;
+          color: #B8B8B8; }
+          main .page .page-main .sorted .list-style span {
+            margin-left: 0; }
+          main .page .page-main .sorted .list-style.active {
+            color: #111111; }
+          main .page .page-main .sorted .list-style:nth-child(2n) {
+            margin-right: 205px;
+            margin-left: 10px; }
+      main .page .page-main .aside {
+        width: 364px;
+        margin-right: 31px; }
+        main .page .page-main .aside legend {
+          border-bottom: 1px solid #DCDCDC;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 1.5;
+          color: #111111;
+          text-transform: uppercase;
+          padding: 27px 0 7px 35px; }
+      main .page .page-main .aside-bottom {
+        width: 364px;
+        padding-bottom: 50px;
+        border: 2px solid #C4C4C4;
+        border-radius: 15px; }
+        main .page .page-main .aside-bottom .pointer {
+          width: 302px;
+          height: 23px;
+          margin: 12px 0 0 34px; }
+          main .page .page-main .aside-bottom .pointer a {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 23px;
+            color: #383838; }
+          main .page .page-main .aside-bottom .pointer:hover {
+            margin-bottom: 170px; }
+          main .page .page-main .aside-bottom .pointer:hover ul {
+            display: block;
+            padding: 14px 0 8px 15px; }
+            main .page .page-main .aside-bottom .pointer:hover ul li {
+              margin-bottom: 11px; }
+              main .page .page-main .aside-bottom .pointer:hover ul li a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #747474; }
+          main .page .page-main .aside-bottom .pointer ul {
+            display: none; }
+          main .page .page-main .aside-bottom .pointer > a {
+            position: relative; }
+            main .page .page-main .aside-bottom .pointer > a:after {
+              position: absolute;
+              top: 5px;
+              left: 290px;
+              content: "";
+              background: url("../../images/sprite.png") no-repeat -249px -2px;
+              width: 8px;
+              height: 5px; }
+            main .page .page-main .aside-bottom .pointer > a:hover ul {
+              display: block; }
+      main .page .page-main .aside-top {
         width: 364px;
         border: 2px dotted #C4C4C4;
         border-radius: 15px;
-        margin-right: 31px; }
-        main .page .page-main aside form p {
+        margin-bottom: 38px; }
+        main .page .page-main .aside-top form p {
           display: flex;
           flex-direction: column; }
-          main .page .page-main aside form p input, main .page .page-main aside form p select {
+          main .page .page-main .aside-top form p input, main .page .page-main .aside-top form p select {
             width: 275px;
             height: 36px;
             border: 1px solid #E1E3E6;
@@ -268,12 +351,12 @@ main {
             font-size: 16;
             line-height: 1.5;
             color: #A3A3A3; }
-          main .page .page-main aside form p [type="radio"]:checked,
-          main .page .page-main aside form p [type="radio"]:not(:checked) {
+          main .page .page-main .aside-top form p [type="radio"]:checked,
+          main .page .page-main .aside-top form p [type="radio"]:not(:checked) {
             position: absolute;
             left: -9999px; }
-          main .page .page-main aside form p [type="radio"]:checked + label,
-          main .page .page-main aside form p [type="radio"]:not(:checked) + label {
+          main .page .page-main .aside-top form p [type="radio"]:checked + label,
+          main .page .page-main .aside-top form p [type="radio"]:not(:checked) + label {
             position: relative;
             padding-left: 38px;
             margin-top: 18px;
@@ -283,10 +366,10 @@ main {
             font-size: 16px;
             line-height: 19px;
             color: #A3A3A3; }
-          main .page .page-main aside form p [type="radio"]:checked + label {
+          main .page .page-main .aside-top form p [type="radio"]:checked + label {
             color: #111111; }
-          main .page .page-main aside form p [type="radio"]:checked + label:before,
-          main .page .page-main aside form p [type="radio"]:not(:checked) + label:before {
+          main .page .page-main .aside-top form p [type="radio"]:checked + label:before,
+          main .page .page-main .aside-top form p [type="radio"]:not(:checked) + label:before {
             content: '';
             position: absolute;
             left: 0;
@@ -295,8 +378,8 @@ main {
             height: 17px;
             border: 3px solid #B8B8B8;
             background: #F2F4F7; }
-          main .page .page-main aside form p [type="radio"]:checked + label:after,
-          main .page .page-main aside form p [type="radio"]:not(:checked) + label:after {
+          main .page .page-main .aside-top form p [type="radio"]:checked + label:after,
+          main .page .page-main .aside-top form p [type="radio"]:not(:checked) + label:after {
             content: '\2714';
             width: 17px;
             height: 17px;
@@ -305,34 +388,26 @@ main {
             top: 0;
             left: 0;
             color: #FFF; }
-          main .page .page-main aside form p [type="radio"]:not(:checked) + label:after {
+          main .page .page-main .aside-top form p [type="radio"]:not(:checked) + label:after {
             opacity: 0; }
-          main .page .page-main aside form p [type="radio"]:checked + label:after {
+          main .page .page-main .aside-top form p [type="radio"]:checked + label:after {
             opacity: 1; }
-          main .page .page-main aside form p label {
+          main .page .page-main .aside-top form p label {
             padding-left: 19px; }
-          main .page .page-main aside form p span {
+          main .page .page-main .aside-top form p span {
             font-weight: 400;
             font-size: 22px;
             line-height: 27px;
             color: #383838;
             margin: 18px 0 0 36px; }
-        main .page .page-main aside form .radio {
+        main .page .page-main .aside-top form .radio {
           padding-left: 56px; }
-          main .page .page-main aside form .radio span {
+          main .page .page-main .aside-top form .radio span {
             margin-left: -19px; }
-          main .page .page-main aside form .radio .shoes {
+          main .page .page-main .aside-top form .radio .shoes {
             margin-left: 0; }
-            main .page .page-main aside form .radio .shoes option {
+            main .page .page-main .aside-top form .radio .shoes option {
               color: #111111; }
-        main .page .page-main aside form legend {
-          border-bottom: 1px solid #DCDCDC;
-          font-weight: 600;
-          font-size: 20;
-          line-height: 1.5;
-          color: #111111;
-          text-transform: uppercase;
-          padding: 27px 0 7px 35px; }
 
 .search-results {
   width: 831px;
@@ -445,6 +520,7 @@ footer {
       height: 36px;
       margin-bottom: 32px; }
   footer .copyright {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
@@ -453,3 +529,15 @@ footer {
     text-align: center; }
     footer .copyright span:first-child {
       margin-right: 19px; }
+
+.list-style {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  color: #B8B8B8; }
+  .list-style span {
+    margin-left: 0; }
+  .list-style.active {
+    color: #111111; }
+  .list-style:nth-child(2n) {
+    margin-right: 150px; }

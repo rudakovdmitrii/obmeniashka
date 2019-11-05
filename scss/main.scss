@@ -26,6 +26,7 @@ body {
 }
 
 
+
 header {
   .header-wrap {
 	 background: $solitude;
@@ -267,11 +268,111 @@ main {
       display: flex;
       font-family: 'Roboto', sans-serif;
       
-      aside {
+      .sorted {
+        width: 831px;
+        height: 73px;
+        border: 2px solid #C4C4C4;
+        border-radius: 16px;
+        margin-bottom: 55px;
+        @include font(400, 16px, 19px, #373737);
+        box-sizing: border-box;
+        padding: 15px 16px 0 17px;
+        
+        select {
+          border: 1px solid #E1E3E6;
+          height: 36px;
+          background: #F2F4F7;
+          border-radius: 7px;
+          margin-left: 10px;
+        }
+        span {
+          margin-left: 30px;
+        }
+        .list-style {
+          @include font(400, 30px, 1, #B8B8B8);
+        
+          span {
+            margin-left: 0;
+          }
+          &.active {
+            color: $black;
+          }
+          &:nth-child(2n) {
+            margin-right: 205px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .aside {
+        width: 364px;
+        margin-right: 31px;
+        
+        legend {
+            border-bottom: 1px solid #DCDCDC; 
+            @include font(700, 20px, 1.5, $black);
+            text-transform: uppercase;
+            padding: 27px 0 7px 35px;
+          }
+      }
+      .aside-bottom {
+        width: 364px;
+        padding-bottom: 50px;
+        border: 2px solid #C4C4C4;
+        border-radius: 15px;
+        .pointer {
+        
+          width: 302px;
+          height: 23px;
+          margin: 12px 0 0 34px;
+          a {
+            @include font(400, 19px, 23px, #383838);
+          }
+          &:hover {
+            margin-bottom: 170px;
+          }
+          &:hover ul {
+            display: block;
+            padding: 14px 0 8px 15px;
+           
+           
+            li {
+              margin-bottom: 11px;
+              a {
+                @include font (400, 16px, 19px, #747474);  
+              }
+            }
+
+          }  
+            
+          ul {
+            display: none;
+          }
+          
+          >a {
+            position: relative;
+          
+            &:after {
+              position: absolute;
+              top: 5px;
+              left: 290px;
+              content: "";
+              background: url('../../images/sprite.png') no-repeat -249px -2px;
+              width: 8px;
+              height: 5px;
+            }   
+            &:hover ul {
+              display: block;
+              
+            }   
+          }
+        }
+       
+      }
+      .aside-top {
         width: 364px;
         border: 2px dotted #C4C4C4;
         border-radius: 15px;
-        margin-right: 31px;
+        margin-bottom: 38px;
         form {
           p {
             display: flex;
@@ -368,12 +469,7 @@ main {
           }
 
           
-          legend {
-            border-bottom: 1px solid #DCDCDC; 
-            @include font(600, 20, 1.5, $black);
-            text-transform: uppercase;
-            padding: 27px 0 7px 35px;
-          }
+          
         }
       }
     }
@@ -499,6 +595,7 @@ footer {
   }
 
   .copyright {
+    font-family: 'Roboto', sans-serif;
     @include font(400, 16px, 1, $white);
     opacity: 0.5;
     text-align: center;
@@ -507,4 +604,17 @@ footer {
     }
   }
   
+}
+
+.list-style {
+  @include font(400, 30px, 1, #B8B8B8);
+  span {
+    margin-left: 0;
+  }
+  &.active {
+    color: $black;
+  }
+  &:nth-child(2n) {
+    margin-right: 150px;
+  }
 }
