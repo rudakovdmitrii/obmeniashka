@@ -148,8 +148,11 @@ main {
         margin-right: 62px;
         
         &:hover ul {
-             display: block;
-          }  
+          display: block;
+          background: $white;
+          z-index: 100;
+          position: relative;
+        }  
           
         ul {
           display: none;
@@ -171,6 +174,9 @@ main {
           }   
           &:hover ul {
              display: block;
+             
+               
+          
           }   
         }
       }
@@ -616,5 +622,76 @@ footer {
   }
   &:nth-child(2n) {
     margin-right: 150px;
+  }
+}
+.colors {
+  margin-bottom: 50px;
+  >span {
+    @include font(400, 22px, 27px, #383838);
+    margin: 18px 0 20px 36px;
+    display: block;
+  }
+
+  .radio-group {
+    width: 275px;
+    margin-left: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    span {
+      width: 40px;
+      height: 38px;
+      display: inline-block;
+      margin-bottom: 9px;
+      position: relative;
+      
+    }
+    .col-one {
+        background: #009CDD;
+      }
+    .col-two {
+      background: #C1004E;
+    }
+    .col-three {
+      background: #43B05C;
+    }
+    .col-four {
+      background: #FFEC00;
+    }
+    .col-five {
+      background: #7E177A;
+    }
+    .col-six {
+      background: #89693E;
+    }
+    .col-seven {
+      background: #DD9EBE;
+    }
+    .col-eight {
+      background: #E8E8E8;
+    }
+    .col-nine {
+      background: #888;
+    }
+    .col-ten {
+      background: #000;
+    }
+    .col-eleven {
+      background: #CC5E1E;
+    }
+    .col-twelve {
+      background: linear-gradient(0deg, #F9E600 0%, #F9E600 100%, #54FF00 100%, #FD7C00 100%, #0058FF 100%, #0058FF 100%);
+    }
+  }
+  .checkbox {
+      display: none;
+  }
+
+  .checkbox:checked + span:before {
+    content: "\2713";
+      position: absolute;
+      top: 5px;
+      left: 21px;
+      color: #FFF;
   }
 }

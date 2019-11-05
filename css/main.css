@@ -146,7 +146,10 @@ main {
         height: 24px;
         margin-right: 62px; }
         main .main-header-wrap .main-header .pointer:hover ul {
-          display: block; }
+          display: block;
+          background: #FFFFFF;
+          z-index: 100;
+          position: relative; }
         main .main-header-wrap .main-header .pointer ul {
           display: none; }
         main .main-header-wrap .main-header .pointer a {
@@ -541,3 +544,57 @@ footer {
     color: #111111; }
   .list-style:nth-child(2n) {
     margin-right: 150px; }
+
+.colors {
+  margin-bottom: 50px; }
+  .colors > span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #383838;
+    margin: 18px 0 20px 36px;
+    display: block; }
+  .colors .radio-group {
+    width: 275px;
+    margin-left: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .colors .radio-group span {
+      width: 40px;
+      height: 38px;
+      display: inline-block;
+      margin-bottom: 9px;
+      position: relative; }
+    .colors .radio-group .col-one {
+      background: #009CDD; }
+    .colors .radio-group .col-two {
+      background: #C1004E; }
+    .colors .radio-group .col-three {
+      background: #43B05C; }
+    .colors .radio-group .col-four {
+      background: #FFEC00; }
+    .colors .radio-group .col-five {
+      background: #7E177A; }
+    .colors .radio-group .col-six {
+      background: #89693E; }
+    .colors .radio-group .col-seven {
+      background: #DD9EBE; }
+    .colors .radio-group .col-eight {
+      background: #E8E8E8; }
+    .colors .radio-group .col-nine {
+      background: #888; }
+    .colors .radio-group .col-ten {
+      background: #000; }
+    .colors .radio-group .col-eleven {
+      background: #CC5E1E; }
+    .colors .radio-group .col-twelve {
+      background: linear-gradient(0deg, #F9E600 0%, #F9E600 100%, #54FF00 100%, #FD7C00 100%, #0058FF 100%, #0058FF 100%); }
+  .colors .checkbox {
+    display: none; }
+  .colors .checkbox:checked + span:before {
+    content: "\2713";
+    position: absolute;
+    top: 5px;
+    left: 21px;
+    color: #FFF; }
